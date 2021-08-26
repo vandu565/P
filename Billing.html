@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Billing Project</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="Project.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <style>
+    body{
+      background-image:url('277686.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        border:none;
+       }
+    .main{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+        width:100vw;
+      } 
+
+      .main2{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height:60vh;
+        width:80vw;
+        margin-top: 30px;
+
+      }
+
+      .head{
+        display:flex;
+        flex-wrap: wrap;
+        
+        width:100%;
+
+      }
+      .head2{
+        margin-left: 310px;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+
+
+      }
+
+      .line{
+        border:2px solid white;
+        width: 100%;
+        height:0%;
+        margin-top: 10px;
+      }
+      .heading{
+        text-align: center;
+      }
+      .table1{
+        margin-top: 30px;
+        border: 2px solid white;
+      }
+
+      
+  </style>
+
+<body>
+  <div class="main">
+ <div class="invoice-box main2" id="inv">
+  
+  <div class="head">
+    <div>
+    <h1 >INVOICE</h1>
+    </div>
+    <div class="head2">
+      <div style="margin: 10px;  line-height: 0.5rem;">
+           <p>Vandana Yadav</p>
+           <p>vandana.yadav@lumen.com</p>
+           <p>1-800-555-Lumen</p>
+      </div>
+      <div style="margin: 10px; line-height: 0.5rem; text-align: right;" >
+        <p>123 Ninja Block</p>
+        <p>Banglore</p>
+        <p>India</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="line">
+  </div>
+
+  <div style="margin-top: 30px; width: 100%;">
+  <div style="float: left; line-height: 0.5rem;">
+      <p>Invoice no = 23456</p>
+      <p>Invoice date = 3/44/5</p>
+      <p>Due date = 2/4/5</p>
+      <Total>1400 Rs</Total>
+  </div>
+  <div style="float: right; line-height: 0.5rem; text-align: right;">
+      <p>Shop In</p>
+      <p>Gurugram 7656</p>
+      <p>Haryana</p>
+      <p>CostmareCare@shopin.com</p>
+    </div>
+  </div>
+
+  
+  
+
+
+      <table class="table1">
+        <tr class="heading">
+          <th>Item</th>
+          <th >Quant</th>
+          <th > Unit Price</th>
+          <th> Total Price</th>
+        </tr>
+      </table>
+  
+</div>
+
+</div>
+    
+    <script src="Billing.js" async defer></script>
+  </body>
+</html>
+

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Billing Project</title>
+    
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="Project.css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+
+  <style>
+    body{
+      background-image:url('277686.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        border:none;
+       }
+    .main{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+        width:100vw;
+      } 
+      .wrapper{
+        border:2px solid white;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      .form-group{
+        border:2px solid white;
+        margin-bottom: 20px;
+      }
+      #productTable {
+        margin-bottom: 20px;
+        border: 2px solid white;
+      }
+
+      .textarea{
+    max-width: 40%;
+    
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid rgb(148, 131, 131) ;
+    color: rgb(82, 78, 78) ;
+    background: transparent;
+    width: 90%;
+    line-height: 1;
+    font-size: 1 rem;
+    
+    }
+    .label{
+      width: 180px ;
+      color: rgb(82, 78, 78) ;
+      text-align: center;
+      font-size: 1 rem;
+      line-height: 1;
+      font-weight: bolder;
+      margin-left: 10px;
+      
+    }
+    #button {
+   background: transparent;
+   color:rgb(82, 78, 78) ;
+   padding: 10px;
+   font-weight: bolder;
+   border: 2px solid rgb(136, 211, 166) ;
+   }
+   
+   .submit{
+     padding: 10px;
+   }
+   .form-group{
+    padding: 10px;
+   }
+
+   .box1{
+     width:800px;
+   }
+   .label1{
+      color: rgb(82, 78, 78) ;
+      text-align: center;
+      font-size: 1 rem;
+      line-height: 1;
+      font-weight: bolder;
+      border: 2px solid white;
+   }
+   #productTable{
+    border: 2px solid rgb(190, 171, 171);
+   }
+   
+
+      
+  </style>
+
+
+
+
+  <body>
+    <div class="main">
+
+    <div>
+      <h1 id="h1">
+        CART
+      </h1>
+    <div >
+    
+      
+  </div>
+
+    <div class="box1" id="dataEntryPortal">
+
+      <form id="form" class="wrapper">
+
+        <div class="form-group"><br />
+          <strong class="label">ENTER PRODUCT ID</strong><br /><br />
+          <input class="textarea" type="number" id="pno" class="form-control" required />
+        </div>
+
+        <div class="form-group ">
+          <strong class="label">ENTER QUANTITY</strong> <br /><br />
+          <input class="textarea" type="number" id="quantity" class="form-control" required />
+        </div>
+
+        <div class="form-group ">
+          <strong class="label">TOTAL AMOUNT-</strong> <span class="label" name="total" id="total"></span>
+        </div>
+
+        <div class="form-group submit">
+          <input id="button"  type="button" value="ADD PRODUCT"id="add"onclick="addRow('productTable','form')" class="btn btn-success btn-block"/>
+          <br />
+        </div>
+
+        <table id="productTable" class="label1 appendProducts" width="auto" >
+         <tr>
+            <th class="label head" style="width: 5%"></th>
+            <th class="label head" style="width: 15% ; margin-left: 2px;" >PRODUCT ID</th>
+            <th class="label head" style="width: 25%">NAME</th>
+            <th class="label head" style="width: 12%">PRICE</th>
+            <th class="label head" >QUANTITY</th>
+            <th class="label head" >TOTAL PRICE</th>
+              <th class="label head" >REMOVE</th>
+          </tr>
+          
+        </table>
+        <div class="form-group submit">
+         <a href="Billing.html"> <input id="button" type="button" value="DELETE PRODUCT" id="delete" class="btn btn-danger btn-block" /></a>
+          <br />
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+</div>
+
+    <script src="Project.js" ></script>
+  </body>
+</html>

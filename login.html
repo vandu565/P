@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      .main{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+        width:100vw;
+        background-image:url('joanna-kosinska-eVQBXxeCre4-unsplash.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid #d9dcdd;
+        width :270px;
+        height:400px;
+      }
+      p{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: 10px;
+      }
+      .btn {
+        background-color: #4caf50; /* Green */
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 5px;
+      }
+      #heading{
+        color: #d9dcdd;
+            font-size: 50px;
+           word-spacing: 4px;
+           line-height: 30px;
+           font-weight: initial;
+      }
+      .textarea{
+    max-width: 60%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    }
+    span{
+      width: 180px ;
+      color: #d9dcdd;
+      text-align: center;
+      font-size: 1.02rem;
+      line-height: 1;
+      font-weight: bolder;
+    }
+    #button {
+   
+    background: transparent;
+    color:#d9dcdd ;
+    padding: 10px;
+    font-weight: bolder;
+    border: 2px solid #d9dcdd;
+    
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+    <div class="container">
+      <h1 id="heading">SHOP IN</h1>
+      <p>
+        <span>USERNAME</span>
+        <input class="textarea" type="text" name="username" id="user" required />
+      </p>
+      <p>
+        <span>PASSWORD</span>
+        <input  class="textarea" type="password" name="password" id="password" required />
+      </p>
+      <input id="button" type="button" value="SUBMIT" class="btn" onclick="Credentials()" />
+    </div>
+  </div>
+
+    <script type="text/javascript">
+      function Credentials() {
+        if (
+          document.getElementById("user").value == "vandana" &&
+          document.getElementById("password").value == "lumen123"
+        ) {
+          alert('Succesfully Logged In  ');
+          document.location.href = "project.html";
+        } else {
+          alert(`Invalid Credentials . Username or Password is incoorect.`);
+        }
+      }
+    </script>
+  </body>
+</html>
